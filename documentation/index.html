@@ -1,0 +1,1761 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Zetta Menu - mega dropdown menu</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="nK">
+	<meta name="copyright" content="nK">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-05-01T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="../assets/prettify.css" media="screen">
+	<script src="../assets/prettify.js"></script>
+
+	<link rel="stylesheet" href="../themes/zetta-menu-default/blue.css" media="all">
+	<link rel="stylesheet" href="../assets/font-awesome.min.css" media="all">
+	
+	
+	<script src="../assets/jquery.min.js"></script>
+	
+	<script src="../assets/jquery.scrollTo.js"></script>
+	<script src="../assets/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#e5e5e5;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{
+			margin: 15px auto;
+			background-image:url(assets/css/img/product_logo.jpg);
+		}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-white {
+			  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+			  background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+			  background-image: -webkit-gradient(linear, 0 0, 0 fff%, from(#DDDDDD), to(#e6e6e6));
+			  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+			  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+			  background-image: linear-gradient(top, #fff, #e6e6e6);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#e6e6e6', GradientType=0);
+			  border-color: #d0d0d0;
+			  color:#000;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-zetta-menu">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#classes" title="Classes">Classes</a></li>
+			<li><a href="#main" title="Main">Main</a></li>
+			<li><a href="#icons" title="Icons">Icons</a></li>
+			<li><a href="#logo" title="Logo">Logo</a></li>
+			<li><a href="#search" title="Search">Search</a></li>
+			<li><a href="#dropdown" title="Dropdown">Dropdown</a></li>
+			<li><a href="#content_dropdown" title="Content Dropdown">Content Dropdown</a></li>
+			<li><a href="#forms" title="Forms">Forms</a></li>
+			<li><a href="#grid_system" title="Grid System">Grid System</a></li>
+			<li><a href="#position" title="Position">Position</a></li>
+			<li><a href="#show_effects" title="Show Effects">Show Effects</a></li>
+			<li><a href="#responsive" title="Responsive">Responsive</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright nK 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Zetta Menu 1.3.3</h1>
+	<h2>CSS3 Mega Dropdown Menu</h2>
+	<div id="documenter_buttons">
+		<a href="http://nkdev.info/zettaMenu" class="btn btn-primary btn-large">Zetta Web Site</a> <a href="http://codecanyon.net/user/nKdev" class="btn btn-large btn-white">Our Envato Profile</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>created: 5 May 2014</li>
+	<li>latest update: 11 August 2014</li>
+	<li>by: nK</li>
+	
+	</ul>
+	</section>
+	
+	<section id="classes">
+	<div class="page-header"><h3>Classes</h3><hr class="notop"></div>
+
+		<h4 id="classes_main">1. Main</h4>
+		<ol>
+			<li>
+				<strong>.zetta-menu</strong> - main menu class;</li>
+			<li>
+				<strong>.zm-full-width</strong> - full width menu;</li>
+			<li>
+				<strong>.zm-fixed</strong> - fixed menu position;</li>
+			<li>
+				<strong>.zm-active</strong> - active menu item;</li>
+			<li>
+				<strong>.zm-right-item</strong> - right aligned item. Accept to main menu items only;</li>
+			<li>
+				<strong>.[w-50...w-1000]</strong> - classes with fixed width;</li>
+		</ol>
+
+
+		<h4 id="classes_logo">2. Logo</h4>
+		<ol>
+			<li>
+				<strong>.zm-logo</strong> - main logo class;</li>
+		</ol>
+
+
+		<h4 id="classes_icons">3. Icons</h4>
+		<ol>
+			<li>
+				<strong>.zm-caret</strong> - dropdown caret;</li>
+			<li>
+				<strong>.zm-single-icon</strong> - single icon (without label) item;</li>
+		</ol>
+
+
+		<h4 id="classes_position">4. Position</h4>
+		<ol>
+			<li>
+				<strong>.zm-position-bottom</strong>;</li>
+			<li>
+				<strong>.zm-position-left</strong>;</li>
+			<li>
+				<strong>.zm-position-right</strong>;</li>
+		</ol>
+
+
+		<h4 id="classes_responsive">5. Responsive</h4>
+		<ol>
+			<li>
+				<strong>.zm-response-simple</strong>;</li>
+			<li>
+				<strong>.zm-response-stack</strong>;</li>
+			<li>
+				<strong>.zm-response-switch</strong>;</li>
+			<li>
+				<strong>.zm-response-margin</strong>;</li>
+		</ol>
+
+
+		<h4 id="classes_show_effects">6. Show Effects</h4>
+		<ol>
+			<li>
+				<strong>.zm-effect-fade</strong>;</li>
+			<li>
+				<strong>.zm-effect-slide-top</strong>;</li>
+			<li>
+				<strong>.zm-effect-slide-bottom</strong>;</li>
+			<li>
+				<strong>.zm-effect-slide-left</strong>;</li>
+			<li>
+				<strong>.zm-effect-slide-right</strong>;</li>
+		</ol>
+
+
+		<h4 id="classes_dropdown">7. Dropdown</h4>
+		<ol>
+			<li>
+				<strong>.zm-drop-left</strong> - left shift dropdown menu class;</li>
+			<li>
+				<strong>.zm-multi-column</strong> - multicolumn dropdown;</li>
+			<li>
+				<strong>.zm-right-align</strong> - right align dropdown;</li>
+		</ol>
+
+
+		<h4 id="classes_content_dropdown">8. Content Dropdown</h4>
+		<ol>
+			<li>
+				<strong>.zm-content</strong> - auto width content class;</li>
+			<li>
+				<strong>.zm-content-full</strong> - full content class;</li>
+			<li>
+				<strong>.zm-right-align</strong> - right align dropdown;</li>
+		</ol>
+
+
+		<h4 id="classes_grid_system">9. Grid System</h4>
+		<ol>
+			<li>
+				<strong>.zm-row</strong>;</li>
+			<li>
+				<strong>.zm-col</strong>;</li>
+			<li>
+				<strong>.[c-1...c-12]</strong> - columns classes from 1 to 12 cells;</li>
+			<li>
+				<strong>.zm-grid-wrapper</strong> - grid column wrapper;</li>
+		</ol>
+
+
+		<h4 id="classes_search_place">10. Search Place</h4>
+		<ol>
+			<li>
+				<strong>.zm-search</strong>;</li>
+		</ol>
+
+
+		<h4 id="classes_other">11. Other</h4>
+		<ol>
+			<li>
+				<strong>.zm-button</strong> - styled button class;</li>
+			<li>
+				<strong>.zm-video</strong> - wrapper for iframe (video, maps...);</li>
+		</ol>
+
+
+</section>
+<section id="main">
+	<div class="page-header"><h3>Main</h3><hr class="notop"></div>
+<p>
+	First of all You should include one of the styles into your project, placed in folder themes. Also, if you plan to use the icons, you must connect the styles <a href="http://fontawesome.io/icons/">Font Awesome</a>. The structure of your document will be like this:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;!-- Zetta Menu --&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;zetta-menu.min.css&quot;&gt;
+
+   &lt;!-- Font Awesome --&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;font-awesome.min.css&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+   &lt;!-- Your Menu Here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<br>
+<h4 id="main_simple_menu">Simple Menu</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a href="#">First Item</a>
+   </li>
+   <li>
+      <a href="#">Second Item</a>
+   </li>
+   <li>
+      <a href="#">Third Item</a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="main_simple_menu_full_width">Simple Menu Full Width</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-full-width</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-full-width">
+   <li>
+      <a href="#">First Item</a>
+   </li>
+   <li>
+      <a href="#">Second Item</a>
+   </li>
+   <li>
+      <a href="#">Third Item</a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-full-width&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<div>
+	&nbsp;</div>
+<h4 id="main_fixed_width_classes">Fixed width classes</h4>
+<p>
+	.[w-50...w-1000]. It can be applied to any of the menu items.</p>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.w-50</li>
+	<li>.w-100</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li class="w-50">
+      <a href="#">50px</a>
+   </li>
+   <li class="w-100">
+      <a href="#">100px</a>
+   </li>
+   <li class="w-150">
+      <a href="#">150px</a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li class=&quot;w-50&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;50px&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;w-100&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;100px&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;w-150&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;150px&lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="main_active_item">Active item</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-active</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li class="zm-active">
+      <a href="#">Active</a>
+   </li>
+   <li>
+      <a href="#">Non Active</a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li class=&quot;zm-active&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Active&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Non Active&lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="icons">
+	<div class="page-header"><h3>Icons</h3><hr class="notop"></div>
+<p>
+	Zetta Menu uses FontAwesome icons. On the <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a> site you can find more than 360 icons and use them in your menu.</p>
+<br>
+<h4 id="icons_with_label">With Label</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a href="#">
+         <i class="fa fa-html5"></i>
+         First Item
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <i class="fa fa-css3"></i>
+         Second Item
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <i class="fa fa-code"></i>
+         Third Item
+      </a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+         First Item
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+         Second Item
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+         Third Item
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="icons_single_icons">Single Icons</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-single-icon</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a href="#">
+         <i class="zm-single-icon fa fa-html5"></i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <i class="zm-single-icon fa fa-css3"></i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <i class="zm-single-icon fa fa-code"></i>
+      </a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;zm-single-icon fa fa-html5&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;zm-single-icon fa fa-css3&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;i class=&quot;zm-single-icon fa fa-code&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="icons_caret_icons">Caret Icons</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-caret</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a href="#">
+         Drop
+         <i class="zm-caret fa fa-angle-down"></i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         Drop
+         <i class="zm-caret fa fa-angle-up"></i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         Drop
+         <i class="zm-caret fa fa-angle-right"></i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         Drop
+         <i class="zm-caret fa fa-angle-left"></i>
+      </a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         Drop
+         &lt;i class=&quot;zm-caret fa fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         Drop
+         &lt;i class=&quot;zm-caret fa fa-angle-up&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         Drop
+         &lt;i class=&quot;zm-caret fa fa-angle-right&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         Drop
+         &lt;i class=&quot;zm-caret fa fa-angle-left&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="logo">
+	<div class="page-header"><h3>Logo</h3><hr class="notop"></div>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-logo</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li class="zm-logo">
+      <a href="#">
+         <img src="assets/css/img/logo.png" alt="logo">
+      </a>
+   </li>
+   <li>
+      <a href="#">First Item</a>
+   </li>
+   <li>
+      <a href="#">Second Item</a>
+   </li>
+   <li>
+      <a href="#">Third Item</a>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li class=&quot;zm-logo&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;img src=&quot;logo.png&quot; alt=&quot;logo&quot;&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="search">
+	<div class="page-header"><h3>Search</h3><hr class="notop"></div>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-search</li>
+	<li>.zm-right-align</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a href="#">Simple Item</a>
+   </li>
+ 
+   <li class="zm-search zm-right-align">
+      <form action="">
+         <input id="search-id" name="search" type="search">
+         <label for="search-id" class="fa fa-search"></label>
+      </form>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Simple Item&lt;/a&gt;
+   &lt;/li&gt;
+
+   &lt;li class=&quot;zm-search zm-right-align&quot;&gt;
+      &lt;form action=&quot;&quot;&gt;
+         &lt;input id=&quot;search-id&quot; name=&quot;search&quot; type=&quot;search&quot;&gt;
+         &lt;label for=&quot;search-id&quot; class=&quot;fa fa-search&quot;&gt;&lt;/label&gt;
+      &lt;/form&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="dropdown">
+	<div class="page-header"><h3>Dropdown</h3><hr class="notop"></div>
+<h4 id="dropdown_simple">Simple</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+         <li><a href="#">Third Item</a></li>
+         <li><a href="#">Fourth Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fourth Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="dropdown_right_aligned">Right Aligned</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-right-align</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+	<li><a>Simple Item</a></li>
+   <li class="zm-right-align">
+      <a>Drop</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+         <li><a href="#">Third Item</a></li>
+         <li><a href="#">Fourth Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;&lt;a&gt;Simple Item&lt;/a&gt;&lt;/li&gt;
+
+   &lt;li class=&quot;zm-right-align&quot;&gt;
+      &lt;a&gt;Drop&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fourth Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="dropdown_multi_column">Multi-Column</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-multi-column</li>
+	<li>.w-300</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a>Dropdown</a>
+      <div class="zm-multi-column w-300">
+         <ul class="w-150">
+            <li><a href="#">First Item</a></li>
+            <li><a href="#">Second Item</a></li>
+            <li><a href="#">Third Item</a></li>
+            <li><a href="#">Fourth Item</a></li>
+         </ul>
+         <ul class="w-150">
+            <li><a href="#">First Item</a></li>
+            <li><a href="#">Second Item</a></li>
+            <li><a href="#">Third Item</a></li>
+            <li><a href="#">Dourth Item</a></li>
+         </ul>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;div class=&quot;zm-multi-column w-300&quot;&gt;
+         &lt;ul class=&quot;w-150&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fourth Item&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;ul class=&quot;w-150&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dourth Item&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="dropdown_multi_level">Multi-Level</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Level</a></li>
+         <li>
+            <a>First Level</a>
+            <ul class="w-150">
+               <li><a href="#">Second Level</a></li>
+               <li><a href="#">Second Level</a></li>
+               <li>
+                  <a>Second Level</a>
+                  <ul class="w-150">
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Second Level</a></li>
+             </ul>
+         </li>
+         <li><a href="#">First Level</a></li>
+         <li><a href="#">First Level</a></li>
+      </ul>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;
+            &lt;a&gt;First Level&lt;/a&gt;
+            &lt;ul class=&quot;w-150&quot;&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;
+                  &lt;a&gt;Second Level&lt;/a&gt;
+                  &lt;ul class=&quot;w-150&quot;&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<div>
+	&nbsp;</div>
+<div>
+	<h4 id="dropdown_left_multi_level">Left Multi-Level</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-drop-left</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li><a>Simple Item</a></li>
+   <li><a>Simple Item</a></li>
+   <li><a>Simple Item</a></li>
+   <li>
+      <a>Dropdown Left</a>
+      <ul class="w-150">
+         <li><a href="#">First Level</a></li>
+         <li>
+            <a>First Level</a>
+            <ul class="zm-drop-left w-150">
+               <li><a href="#">Second Level</a></li>
+               <li><a href="#">Second Level</a></li>
+               <li>
+                  <a>Second Level</a>
+                  <ul class="zm-drop-left w-150">
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                     <li><a href="#">Third Level</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Second Level</a></li>
+             </ul>
+         </li>
+         <li><a href="#">First Level</a></li>
+         <li><a href="#">First Level</a></li>
+      </ul>
+   </li>
+</ul>
+
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;&lt;a&gt;Simple Item&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a&gt;Simple Item&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a&gt;Simple Item&lt;/a&gt;&lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;Dropdown Left&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;
+            &lt;a&gt;First Level&lt;/a&gt;
+            &lt;ul class=&quot;zm-drop-left w-150&quot;&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;
+                  &lt;a&gt;Second Level&lt;/a&gt;
+                  &lt;ul class=&quot;zm-drop-left w-150&quot;&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third Level&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Level&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+<br>
+</section>
+<section id="content_dropdown">
+	<div class="page-header"><h3>Content Dropdown</h3><hr class="notop"></div>
+<h4 id="content_dropdown_fixed_width">Fixed Width</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-content</li>
+	<li>.w-300</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li class="zm-content">
+      <a>Content</a>
+      <div class="w-300">
+         <h3>Title</h3>
+         Your own content here.
+         <p>And here</p>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li class=&quot;zm-content&quot;&gt;
+      &lt;a&gt;Content&lt;/a&gt;
+      &lt;div class=&quot;w-300&quot;&gt;
+         &lt;h3&gt;Title&lt;/h3&gt;
+         Your own content here.
+         &lt;p&gt;And here&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="content_dropdown_fixed_width_right_align">Fixed Width Right Align</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-content</li>
+	<li>.zm-right-align</li>
+	<li>.w-300</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li><a href="#">Simple item</a></li>
+   <li><a href="#">Simple item</a></li>
+   <li><a href="#">Simple item</a></li>
+ 
+   <li class="zm-content zm-right-align">
+      <a>Content</a>
+      <div class="w-300">
+         <h3>Title</h3>
+         Your own content here.
+         <p>And here</p>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Simple item&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Simple item&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Simple item&lt;/a&gt;&lt;/li&gt;
+
+   &lt;li class=&quot;zm-content zm-right-align&quot;&gt;
+      &lt;a&gt;Content&lt;/a&gt;
+      &lt;div class=&quot;w-300&quot;&gt;
+      &lt;h3&gt;Title&lt;/h3&gt;
+         Your own content here.
+         &lt;p&gt;And here&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="content_dropdown_full_width">Full Width</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-full-width</li>
+	<li>.zm-content-full</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-full-width">
+   <li class="zm-content-full">
+      <a>Content</a>
+      <div>
+         <h3>Title</h3>
+         Your own content here.
+         <p>And here</p>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-content-full&quot;&gt;
+      &lt;a&gt;Content&lt;/a&gt;
+      &lt;div&gt;
+      &lt;h3&gt;Title&lt;/h3&gt;
+         Your own content here.
+         &lt;p&gt;And here&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="forms">
+	<div class="page-header"><h3>Forms</h3><hr class="notop"></div>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-content</li>
+	<li>.zm-button</li>
+	<li>.w-300</li>
+</ol>
+
+<ul onClick="" class="zetta-menu">
+   <li class="zm-content">
+      <a>Form</a>
+      <div class="w-300">
+         <h3>Title</h3>
+         <form action="">
+            <input placeholder="Text" name="text" type="text">
+            <textarea placeholder="Textarea" name="textarea" rows="10"></textarea>
+            <input class="zm-button" type="submit" value="Submit">
+         </form>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu&quot;&gt;
+   &lt;li class=&quot;zm-content&quot;&gt;
+      &lt;a&gt;Form&lt;/a&gt;
+      &lt;div class=&quot;w-300&quot;&gt;
+         &lt;h3&gt;Title&lt;/h3&gt;
+         &lt;form action=&quot;&quot;&gt;
+            &lt;input placeholder=&quot;Text&quot; name=&quot;text&quot; type=&quot;text&quot;&gt;
+            &lt;textarea placeholder=&quot;Textarea&quot; name=&quot;textarea&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+            &lt;input class=&quot;zm-button&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="grid_system">
+	<div class="page-header"><h3>Grid System</h3><hr class="notop"></div>
+<p>
+	Zetta Menu uses 12-column grid system. You can use grid-system in content dropdown only (.zm-content or .zm-content-full).</p>
+<h4 id="grid_system_simple_usage">Simple Usage</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-full-width</li>
+	<li>.zm-content-full</li>
+	<li>.zm-row</li>
+	<li>.zm-col</li>
+	<li>.c-4</li>
+	<li>.c-8</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-full-width">
+   <li class="zm-content-full">
+      <a>Grid</a>
+      <div>
+         <div class="zm-row">
+            <div class="zm-col c-4">
+               Content in column 4 of 12
+            </div>
+            <div class="zm-col c-8">
+               Content in column 8 of 12
+            </div>
+         </div>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-content-full&quot;&gt;
+      &lt;a&gt;Grid&lt;/a&gt;
+      &lt;div&gt;
+         &lt;div class=&quot;zm-row&quot;&gt;
+            &lt;div class=&quot;zm-col c-4&quot;&gt;
+               Content in column 4 of 12
+            &lt;/div&gt;
+            &lt;div class=&quot;zm-col c-8&quot;&gt;
+               Content in column 8 of 12
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<br>
+<h4 id="grid_system_with_background_highlight">With Background Highlight</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-full-width</li>
+	<li>.zm-content-full</li>
+	<li>.zm-grid-wrapper</li>
+	<li>.zm-row</li>
+	<li>.zm-col</li>
+	<li>.c-4</li>
+	<li>.c-8</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-full-width">
+   <li class="zm-content-full">
+      <a>Grid</a>
+      <div>
+         <div class="zm-row">
+            <div class="zm-col c-4">
+               <div class="zm-grid-wrapper">
+                  c-4
+               </div>
+            </div>
+            <div class="zm-col c-8">
+               <div class="zm-grid-wrapper">
+                  c-8
+               </div>
+            </div>
+         </div>
+      </div>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-content-full&quot;&gt;
+      &lt;a&gt;Grid&lt;/a&gt;
+      &lt;div&gt;
+         &lt;div class=&quot;zm-row&quot;&gt;
+            &lt;div class=&quot;zm-col c-4&quot;&gt;
+               &lt;div class=&quot;zm-grid-wrapper&quot;&gt;
+                  c-4
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;zm-col c-8&quot;&gt;
+               &lt;div class=&quot;zm-grid-wrapper&quot;&gt;
+                  c-8
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</section>
+<section id="position">
+	<div class="page-header"><h3>Position</h3><hr class="notop"></div>
+<h4 id="position_top">Top</h4>
+<p>
+	The top menu item is default, therefore no need to use any class.</p>
+<br>
+<h4 id="position_bottom">Bottom</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-position-bottom</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-position-bottom">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>Dropdown 2</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-position-bottom&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown 2&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<div>
+	<div>
+		&nbsp;</div>
+	<div>
+		<h4 id="position_left">Left</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-position-left</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-position-left">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>Dropdown 2</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+		<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-position-left&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown 2&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	</div>
+</div>
+<div>
+	&nbsp;</div>
+<div>
+	<h4 id="position_right">Right</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-position-right</li>
+	<li>.w-150</li>
+</ol>
+
+<div class="menu-wrapper">
+	<ul onClick="" class="zetta-menu zm-position-right">
+	   <li>
+	      <a>Dropdown</a>
+	      <ul class="w-150">
+	         <li><a href="#">First Item</a></li>
+	         <li><a href="#">Second Item</a></li>
+	      </ul>
+	   </li>
+	   <li>
+	      <a>Dropdown 2</a>
+	      <ul class="w-150">
+	         <li><a href="#">First Item</a></li>
+	         <li><a href="#">Second Item</a></li>
+	      </ul>
+	   </li>
+	</ul>
+</div>
+
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-position-right&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown 2&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+<br>
+</section>
+<section id="show_effects">
+	<div class="page-header"><h3>Show Effects</h3><hr class="notop"></div>
+<h4 id="show_effects_fade">Fade</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-effect-fade</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-effect-fade">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-effect-fade&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	<p>
+		&nbsp;</p>
+</div>
+<h4 id="show_effects_slide_top">Slide Top</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-effect-slide-top</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-effect-slide-top">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-effect-slide-top&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	<p>
+		&nbsp;</p>
+</div>
+<h4 id="show_effects_slide_bottom">Slide Bottom</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-effect-slide-bottom</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-effect-slide-bottom">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-effect-slide-bottom&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	<p>
+		&nbsp;</p>
+</div>
+<h4 id="show_effects_slide_left">Slide Left</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-effect-slide-left</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-effect-slide-left">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-effect-slide-left&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	<p>
+		&nbsp;</p>
+</div>
+<h4 id="show_effects_slide_right">Slide Right</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-effect-slide-right</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-effect-slide-right">
+   <li>
+      <a>Dropdown</a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-effect-slide-right&quot;&gt;
+   &lt;li&gt;
+      &lt;a&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;w-150&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+<br>
+</section>
+<section id="responsive">
+	<div class="page-header"><h3>Responsive</h3><hr class="notop"></div>
+<p>
+	To see the result, please reduce the browser window.</p>
+<br>
+<h4 id="responsive_simple">Simple</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-response-simple</li>
+	<li>.zm-full-width</li>
+	<li>.zm-logo</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-response-simple zm-full-width">
+   <li class="zm-logo">
+      <a href="#">
+         <img src="assets/css/img/logo.png" alt="logo">
+      </a>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-twitter"></i>
+         Dropdown
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-facebook"></i>
+         Dropdown 2
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-response-simple zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-logo&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;img src=&quot;assets/css/img/logo.png&quot; alt=&quot;logo&quot;&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+         Dropdown
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+         Dropdown 2
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+	<p>
+		&nbsp;</p>
+	<h4 id="responsive_stack">Stack</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-response-stack</li>
+	<li>.zm-full-width</li>
+	<li>.zm-logo</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-response-stack zm-full-width">
+   <li class="zm-logo">
+      <a href="#">
+         <img src="assets/css/img/logo.png" alt="logo">
+      </a>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-twitter"></i>
+         Dropdown
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-facebook"></i>
+         Dropdown 2
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+	<div>
+		<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-response-stack zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-logo&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;img src=&quot;assets/css/img/logo.png&quot; alt=&quot;logo&quot;&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+         Dropdown
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+         Dropdown 2
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	</div>
+
+<br>
+<h4 id="responsive_switch">Switch</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-response-switch</li>
+	<li>.zm-full-width</li>
+	<li>.zm-logo</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-response-switch zm-full-width">
+   <li class="zm-logo">
+      <a href="#">
+         <img src="assets/css/img/logo.png" alt="logo">
+      </a>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-twitter"></i>
+         Dropdown
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-facebook"></i>
+         Dropdown 2
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-response-switch zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-logo&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;img src=&quot;assets/css/img/logo.png&quot; alt=&quot;logo&quot;&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+         Dropdown
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+         Dropdown 2
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<h4 id="responsive_margin">Responsive with margin</h4>
+<ol>
+	<strong>Using:</strong>
+	<li>.zetta-menu</li>
+	<li>.zm-response-stack</li>
+	<li>.zm-response-margin</li>
+	<li>.zm-full-width</li>
+	<li>.zm-logo</li>
+	<li>.w-150</li>
+</ol>
+
+<ul onClick="" class="zetta-menu zm-response-stack zm-response-margin zm-full-width">
+   <li class="zm-logo">
+      <a href="#">
+         <img src="assets/css/img/logo.png" alt="logo">
+      </a>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-twitter"></i>
+         Dropdown
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+   <li>
+      <a>
+         <i class="fa fa-facebook"></i>
+         Dropdown 2
+      </a>
+      <ul class="w-150">
+         <li><a href="#">First Item</a></li>
+         <li><a href="#">Second Item</a></li>
+      </ul>
+   </li>
+</ul>
+
+	<div>
+		<pre class="prettyprint lang-html linenums">
+&lt;ul onClick=&quot;&quot; class=&quot;zetta-menu zm-response-stack zm-response-margin zm-full-width&quot;&gt;
+   &lt;li class=&quot;zm-logo&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+         &lt;img src=&quot;assets/css/img/logo.png&quot; alt=&quot;logo&quot;&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+         Dropdown
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;
+      &lt;a&gt;
+         &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+         Dropdown 2
+      &lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First Item&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Item&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;</pre>
+	</div>
+</section>
+
+	</div>
+</body>
+</html>

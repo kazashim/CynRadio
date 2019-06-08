@@ -1,0 +1,20 @@
+﻿***Version 1.4.1 Release Date: February 27, 2018
+- bug fix
+
+***Version 1.4 Release Date: February 14, 2018
+- code improvements
+
+***Version 1.3 Release Date: January 10, 2018
+- code improvements for touch navigation feature
+
+﻿***Version 1.2 Release Date: August 31, 2017
+- it automatically adds '/;' at the end of the stream which requires these characters
+
+***Version 1.1.0 Release Date: March 21, 2017
+- the last.fm api will display the image on websites which use HTTPS
+
+***Version 1.1 Release Date: March 05, 2017
+- updated the Facebook API to the latest version 2.8
+- improvements for 'now_playing' features
+
+***Version 1.0 Release Date: July 01, 2016
