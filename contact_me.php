@@ -3,8 +3,8 @@
 
 if($_POST)
 {
-	$to_Email   	= "soniya@multia.in"; //Replace with recipient email address
-	$subject        = 'Enquiry from MiEvent'; //Subject line for emails
+	$to_Email   	= "info@cynojine.com"; //Replace with recipient email address
+	$subject        = 'Thenks From Cynojine'; //Subject line for emails
 	
 	//check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
